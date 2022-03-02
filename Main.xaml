@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="700,1450" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="700,1133" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -69,19 +69,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="554,1385" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="476,1068" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Login" sap:VirtualizedContainerService.HintSize="512,1293" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Version="V1">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Login" sap:VirtualizedContainerService.HintSize="434,976" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" ScopeGuid="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,1077" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,760" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="vUserName">
                 <Variable.Default>
@@ -95,7 +95,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Text="[vUserName]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Text="[vUserName]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2021/06/29093713/AutomationAnywhereLabs-Login.html?_fsi=Mowkr7WN" DesignTimeRectangle="820, 455, 400, 38" ElementType="InputBox" FriendlyName="'INPUT inputEmail'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='form-control' aaname='' /&gt;" Guid="8b63201d-d14e-4b50-a02c-ed7d0e4d5dd7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAqCAYAAACUcq0RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVHhe7di9agJRAITRvP/DBYvYRLBIkSYINmqj3DDBXdb8kciU58AUu3v7j7sPAwAKBAWAipugHI6nsX15Hav1Zjw+PZuZmX1ZGpFWpBlLc1DyIYfedvtxPl+ubwHgVhqRVqQZy6jMQUltcgAA/iLNSDsmc1BSGjcTAP4qzUg7JnNQ8l8MAP5j2Q5BAeBuggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAV3wZltd6M8/lyfQKA36UZacdkDsr25XW87fbXJwD4XZqRdkzmoByOp4/S5ICbCgA/SSPSijQj7ZjMQYl8SG1yKP/FzMzMPi+NSCuWMYmboADAvQQFgIIx3gEZyHGbu8Ij5wAAAABJRU5ErkJggg==" InformativeScreenshot="1ef6c444b2240ca009f7abf054f6dec2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Login' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -106,7 +106,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Text="[vPassword]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Text="[vPassword]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2021/06/29093713/AutomationAnywhereLabs-Login.html" DesignTimeRectangle="820, 541, 400, 38" ElementType="InputBoxPassword" FriendlyName="'INPUT inputPassword'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="e299a7be-cd3d-47ac-a848-2587208c811d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAAqCAYAAACUcq0RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVHhe7di9agJRAITRvP/DBYvYRLBIkSYINmqj3DDBXdb8kciU58AUu3v7j7sPAwAKBAWAipugHI6nsX15Hav1Zjw+PZuZmX1ZGpFWpBlLc1DyIYfedvtxPl+ubwHgVhqRVqQZy6jMQUltcgAA/iLNSDsmc1BSGjcTAP4qzUg7JnNQ8l8MAP5j2Q5BAeBuggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAVggJAhaAAUCEoAFQICgAV3wZltd6M8/lyfQKA36UZacdkDsr25XW87fbXJwD4XZqRdkzmoByOp4/S5ICbCgA/SSPSijQj7ZjMQYl8SG1yKP/FzMzMPi+NSCuWMYmboADAvQQFgIIx3gEZyHGbu8Ij5wAAAABJRU5ErkJggg==" InformativeScreenshot="20a8c6f6807a4b7248a48006f7591ea7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -117,34 +117,11 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="945bea96-b0f8-4976-8c49-9a9d018c3ee9" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2021/06/29093713/AutomationAnywhereLabs-Login.html" DesignTimeRectangle="820, 595, 400, 48" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2' aaname='Sign in' check:innerText='SIGN IN' /&gt;" Guid="a6a1666f-d982-40e4-8553-118514bebdb3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZQAAAA0CAYAAACtrs76AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT7SURBVHhe7d0/bxxFHMZxIyEZicgdr4Ge98QrcBeMkzgSHaKiS8UboKJMqpRBdO5SUKQJhZtIKYf5nj3L7Mzsn7tbmdu77yN9pHjvfOs0v0e7s7t3FowxxpgFYqEYY4xZJIsWyt93Ifz2Vwjf/x7Cd7+G8M1PIZxfh/DFD3FHkqT/BTOYWcxMZjYzo5nVzOwls3eh/PMphJ/fhvDtLyF89SyEi5v6P3N21dgmSXocjRnMrGZmM7uZ4czyfbNzodBstBzN9/Xz+o+VJK0DM5xZzkzf56hlp0K5eXO/8y9/rP8wSdI6MdOZ7cz4XbJVobz7cH941DytJUk6Csx4Zj0zf5vMLhQWcGius6f9HUuSjlCc9cx8Zv/czCoUFmyevCh2Jkk6esx+OmBOJguFD7p4We9EknQa6IA5pTJaKBzqeGQiSaILpk5/DRYKizGbNRNJkiI6YWyhfrBQWOF3AV6S1ImdQDcMpVkoXIPspcGSpBLdMHSfSlUo3CXpqS5J0hA6onVHfVUo3HrvHfCSpCF0BF1RplcoPBzMoxNJ0hS6onygZK9QuM7YBz1KkqbQFeW9Kb1C2VzZ1fhFSZJK5RVfXaGwwMKz8Vu/JElSic7IF+e7QuEOSC8VliTNRWfkd893hcKKfesXpIPzRwjVFYufQ7jM3nP7sPl1fG/vd6NXHx9ezBO35e+5fP+wPeb2z/5rr+O+WttLzffFf6fcxX3k709/V7ldOmT51V5dofA9w603SwelVSZkZqGk7VVGCqX87KUKhbzK3m+haI3ojpSuUPjy+tabpUPSDfpyyMdhPFUoacCTqmjGCiUmH/JLFkpeZBaK1ojuSOkK5fy6fqN0aMZOReWqQskGees0WKnbTxzy5WctUijxtdvidQtFa0R3pHSFsrmh8ar/RukQlaetWoO9LIHWkU35OXnR5IWSlwC/u1ShXMb9pdN3nPqyULQ6sTPojhQLRauUhm8XBn/2+qKFEn/Oy2GxQok/5yVioWh1hgrFU15ao27wx+SFUBbK2Cmv6r1RWSj5xQB3CxYK29L+0+daKFqT5ikvF+W1Bgz63oDOBv1ooWTbSH511axCybc9ZKlCycuOWChak+aivJcNaw3Kod4lH9BRqyTKwV1mqlCQSoIsVihRfgrPQtGaNC8b9sZGrUKrFIrhjGahFK/lKcthqFDyI6IlCwXp77JQtCbNGxt99IokaRuDj17x4ZCSpG0MPhyS+Ph6SdJcg4+vJ37BliRpjskv2PIrgCVJc9AVo18BTFix5wvoWx8gSRIdkV/dlVIVCgssHqVIkobQEflifEpVKOTmjZcQS5JqdAMd0UqzUMjmiq+n/Q+SJJ2w2AnllV15Bgvl3QdPfUmS/kMn0A1DGSwUwh2QT17UHypJOi10QX5XfCujhUK4zvjiZf3hkqTTQAeU95y0MlkohA/ySEWSTg+zf06ZkFmFQjjU2aypuFAvSccvznpm/tRprjyzC4WwGMMKv5cUS9LxYsYz68cW4FvZqlBSuAaZ5vKOekk6Hsx0ZvvQfSZT2alQCHdJcus9O/eBkpK0XsxwZjkzvXUH/NzsXCgpPByMBRsOj3g2fvN02FVjmyTpcTRmMLOamc3sZoaXD3rcJXsXSh6ajQUcWo7vGebL68+v75uv/M9Ikh4HM5hZzExmNjOjmdX7HI20smihGGOMOd1YKMYYYxZICP8CV5FE/P1KjR0AAAAASUVORK5CYII=" InformativeScreenshot="acb5d51dc8a08ba1abcf3d9ce685643f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Login' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,276" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:TakeScreenshot Screenshot="{x:Null}" WaitBefore="{x:Null}" DisplayName="Take Screenshot 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1">
-                    <ui:TakeScreenshot.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a16620c1-f59f-4a86-b9f5-dbe94c11b3c8" InformativeScreenshot="215ecbfdec110ab322fd01417d13f500" Selector="&lt;webctrl isleaf='1' tag='DIV' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:TakeScreenshot.Target>
-                  </ui:TakeScreenshot>
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
